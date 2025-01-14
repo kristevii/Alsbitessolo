@@ -60,42 +60,51 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_marginTop="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/text2"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvsapa"
         app:layout_constraintEnd_toStartOf="@+id/gambar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layout" />
+    <TextView
+        android:id="@+id/tvsapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taste that Welcomes Like Morning Sun.\nRasa yang Menyambut Seperti Mentari Pagi."
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/text2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
     <TextView
         android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pilihan Menu"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text"
-        app:layout_constraintBottom_toTopOf="@+id/card2"/>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card1"
-        android:layout_width="90dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="50dp"
-        app:cardCornerRadius="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/card2"
-        app:layout_constraintTop_toBottomOf="@+id/text2"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/tvsapa"
+        app:layout_constraintBottom_toTopOf="@+id/linear1"/>
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2">
         <LinearLayout
-            android:layout_width="90dp"
-            android:layout_height="80dp"
-            android:orientation="vertical"
-            app:layout_constraintStart_toStartOf="@id/card1"
-            app:layout_constraintEnd_toEndOf="@+id/card1"
-            app:layout_constraintBottom_toBottomOf="@+id/card1">
+            android:id="@+id/paketjumat"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
             <ImageView
                 android:id="@+id/img1"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:src="@drawable/jumat" />
             <TextView
                 android:id="@+id/tvcard1"
@@ -104,27 +113,19 @@
                 android:text="Paket Jumat Berkah"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:textSize="10sp"
-                android:textStyle="bold" />
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card2"
-        android:layout_width="90dp"
-        android:layout_height="60dp"
-        app:cardCornerRadius="20dp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintStart_toEndOf="@+id/card1"
-        app:layout_constraintEnd_toStartOf="@+id/card3"
-        app:layout_constraintTop_toBottomOf="@+id/text2">
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="103dp"
+            android:id="@+id/makanan"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
             android:orientation="vertical">
             <ImageView
                 android:id="@+id/img2"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:src="@drawable/makanan" />
             <TextView
                 android:id="@+id/tvcard2"
@@ -133,27 +134,28 @@
                 android:text="Makanan"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:textSize="10sp"
-                android:textStyle="bold" />
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card3"
-        android:layout_width="90dp"
-        android:layout_height="60dp"
-        app:cardCornerRadius="20dp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toStartOf="@+id/card4"
-        app:layout_constraintTop_toBottomOf="@+id/text2"
-        app:layout_constraintStart_toEndOf="@+id/card2">
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear1">
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="103dp"
+            android:id="@+id/minuman"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
             android:orientation="vertical">
             <ImageView
                 android:id="@+id/img3"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:src="@drawable/minuman" />
             <TextView
                 android:id="@+id/tvcard3"
@@ -162,32 +164,20 @@
                 android:text="Minuman"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:textSize="10sp"
-                android:textStyle="bold" />
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card4"
-        android:layout_width="90dp"
-        android:layout_height="60dp"
-        app:cardCornerRadius="20dp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/card3"
-        app:layout_constraintTop_toBottomOf="@+id/text2">
-
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="103dp"
+            android:id="@+id/testimoni"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
             android:orientation="vertical">
-
             <ImageView
                 android:id="@+id/img4"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:src="@drawable/testi" />
-
             <TextView
                 android:id="@+id/tvcard4"
                 android:layout_width="match_parent"
@@ -195,9 +185,10 @@
                 android:text="Testimoni"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:textSize="10sp"
-                android:textStyle="bold" />
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

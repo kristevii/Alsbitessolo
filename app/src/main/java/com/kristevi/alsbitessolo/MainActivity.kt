@@ -2,6 +2,7 @@ package com.kristevi.alsbitessolo
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -11,10 +12,10 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     // inisialisasi
-    lateinit var card1 : CardView
-    lateinit var card2 : CardView
-    lateinit var card3 : CardView
-    lateinit var card4 : CardView
+    lateinit var paketjumat : LinearLayout
+    lateinit var makanan : LinearLayout
+    lateinit var minuman : LinearLayout
+    lateinit var testimoni : LinearLayout
     lateinit var tvabout : TextView
     lateinit var tvkontak : TextView
 
@@ -23,26 +24,26 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val card1: CardView = findViewById(R.id.card1)
-        card1.setOnClickListener {
+        val paketjumat: LinearLayout = findViewById(R.id.paketjumat)
+        paketjumat.setOnClickListener {
             // membuat  intent untuk memulai activity kedua
             val intent = Intent(this, PaketJumatActivity::class.java)
             startActivity(intent)
         }
-        val card2: CardView = findViewById(R.id.card2)
-        card2.setOnClickListener {
+        val makanan: LinearLayout = findViewById(R.id.makanan)
+        makanan.setOnClickListener {
             // membuat  intent untuk memulai activity kedua
             val intent = Intent(this, MakananActivity::class.java)
             startActivity(intent)
         }
-        val card3: CardView = findViewById(R.id.card3)
-        card3.setOnClickListener {
+        val minuman: LinearLayout = findViewById(R.id.minuman)
+        minuman.setOnClickListener {
             // membuat  intent untuk memulai activity kedua
             val intent = Intent(this, MinumanActivity::class.java)
             startActivity(intent)
         }
-        val card4: CardView = findViewById(R.id.card4)
-        card4.setOnClickListener {
+        val testimoni: LinearLayout = findViewById(R.id.testimoni)
+        testimoni.setOnClickListener {
             // membuat  intent untuk memulai activity kedua
             val intent = Intent(this, TestimoniActivity::class.java)
             startActivity(intent)
@@ -68,10 +69,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
         fun init() {
-            card1 = findViewById(R.id.card1)
-            card2 = findViewById(R.id.card2)
-            card3 = findViewById(R.id.card3)
-            card4 = findViewById(R.id.card4)
+            paketjumat = findViewById(R.id.paketjumat)
+            makanan = findViewById(R.id.makanan)
+            minuman = findViewById(R.id.minuman)
+            testimoni = findViewById(R.id.testimoni)
             tvabout = findViewById(R.id.tvabout)
             tvkontak = findViewById(R.id.tvkontak)
         }
