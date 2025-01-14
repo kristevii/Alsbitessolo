@@ -13,7 +13,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/icon2"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hi, Its Alsbitessolo"
-        android:textSize="25dp"
+        android:textSize="30dp"
         android:textStyle="bold"
         android:textAlignment="center"
         android:layout_marginTop="15dp"
@@ -44,12 +44,13 @@
         android:layout_marginEnd="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvjudul"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvjudul"
+        app:layout_constraintBottom_toTopOf="@+id/card1"/>
     <androidx.cardview.widget.CardView
         android:id="@+id/card1"
         android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="15dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
         app:cardCornerRadius="35dp"
         app:cardBackgroundColor="#C8C1C1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,7 +71,8 @@
         android:id="@+id/twitter"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/instagram"
         app:layout_constraintTop_toBottomOf="@+id/card1">
@@ -85,7 +87,7 @@
         android:id="@+id/instagram"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toStartOf="@+id/twitter"
         app:layout_constraintStart_toEndOf="@+id/gmaps"
         app:layout_constraintTop_toBottomOf="@+id/card1">
@@ -100,7 +102,8 @@
         android:id="@+id/gmaps"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/instagram"
         app:layout_constraintTop_toBottomOf="@+id/card1">
