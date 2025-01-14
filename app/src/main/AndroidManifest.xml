@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Alsbitessolo"
         tools:targetApi="31">
         <activity
+            android:name=".PaketJumatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TestimoniActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MinumanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MakananActivity"
+            android:exported="false" />
+        <activity
             android:name=".TentangActivity"
             android:exported="false" />
         <activity

@@ -54,7 +54,8 @@
         app:cardBackgroundColor="#C8C1C1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvdesc">
+        app:layout_constraintTop_toBottomOf="@+id/tvdesc"
+        app:layout_constraintBottom_toTopOf="@+id/instagram">
         <TextView
             android:id="@+id/tvcard1"
             android:layout_width="match_parent"
@@ -67,8 +68,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/twitter"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/instagram"
@@ -82,13 +83,12 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/instagram"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toStartOf="@+id/twitter"
         app:layout_constraintStart_toEndOf="@+id/gmaps"
         app:layout_constraintTop_toBottomOf="@+id/card1">
-
         <ImageView
             android:id="@+id/imginstagram"
             android:layout_width="match_parent"
@@ -98,13 +98,12 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/gmaps"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/instagram"
         app:layout_constraintTop_toBottomOf="@+id/card1">
-
         <ImageView
             android:id="@+id/imggmaps"
             android:layout_width="match_parent"
