@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TentangActivity"
+    android:layout_margin="15dp">
+
+    <TextView
+        android:id="@+id/tvjudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tentang Kami"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tvnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alsbitessolo"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvjudul"/>
+    <TextView
+        android:id="@+id/tvdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alsbitessolo adalah spesialis pre-order makan siang yang menawarkan berbagai pilihan menu praktis dan lezat seperti bento, rice bowl, spaghetti, kimbab, chicken karage, katsu, dan masih banyak lagi. Kami memahami betapa pentingnya makan siang yang berkualitas di tengah kesibukan Anda. Dengan sistem pre-order, kami memastikan setiap pesanan disiapkan segar dan dikirim tepat waktu. Bagi pelanggan di area Solo, kami juga memberikan layanan pengantaran gratis, termasuk untuk menu spesial kami, Paket Jumat Berkah. Pesan melalui Gojek dan nikmati kelezatan makan siang yang praktis dari Alsbitessolo!"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvnama"/>
+    <Button
+        android:id="@+id/btkembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali ke Beranda"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvdesc"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
